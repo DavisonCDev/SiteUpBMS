@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Header from "./components/Header";
+import HeroSection from "./components/HeroSection";
+import About from "./components/About";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import backgroundImage from "./Imagem01.jpeg"; // Importando a imagem
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: "cover",
+        backgroundAttachment: "fixed", // Faz a imagem de fundo rolar junto com a página
+        backgroundPosition: "center",
+        minHeight: "100vh",
+      }}
+    >
+      <Header />
+      <HeroSection />
+      <About />
+      <Services />
+      <Contact />
+      <Footer />
     </div>
   );
 }

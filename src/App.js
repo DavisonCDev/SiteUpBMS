@@ -6,6 +6,7 @@ import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import backgroundImage from "./Imagem01.jpeg"; // Importando a imagem
+import SuccessCases from './components/SuccessCases';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <Header />
       <HeroSection />
       <About />
+      <SuccessCases />
       <Services />
       <Contact />
       <Footer />

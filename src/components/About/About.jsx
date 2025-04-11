@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './About.module.css';
+import videoApresentation from '../../assets/videoapresentation.mp4'; // <-- importação do vídeo
 
 const About = () => (
   <section className={styles.about}>
@@ -9,7 +10,7 @@ const About = () => (
       incêndio, controle de acesso, climatização e infraestrutura crítica para data centers.
     </p>
     <video controls className={styles.video}>
-      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4" />
+      <source src={videoApresentation} type="video/mp4" />
       Seu navegador não suporta vídeo.
     </video>
   </section>
